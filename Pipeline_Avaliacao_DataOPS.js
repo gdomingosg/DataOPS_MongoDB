@@ -4,14 +4,7 @@
 [
   {
     $lookup:
-      /**
-       * from: The target collection.
-       * localField: The local join field.
-       * foreignField: The target join field.
-       * as: The name for the results.
-       * pipeline: Optional pipeline to run on the foreign collection.
-       * let: Optional variables to use in the pipeline field stages.
-       */
+      /*Linkando as duas tabelas utilizando o campo Montadora*/
       {
         from: "Montadoras",
         localField: "Montadora",
@@ -20,10 +13,11 @@
       },
   },
   {
-    $unwind: "$Info_montadora"
+    $unwind: "$Info_montadora" /*Abrindo o campo montadoras para ter acessos aos dados*/
   },
   {
     $group: {
+      /*Categorizando os carros com base no Pais*/
       _id: "$Info_montadora.Pais",
       Carro: {
         $push: "$Carro"
