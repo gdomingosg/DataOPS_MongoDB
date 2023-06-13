@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "648794e99447fb6334b30504"
+  },
+  "Montadora": "Chevrolet",
+  "Pais": "EUA"
+},
+{
+  "_id": {
+    "$oid": "648794e99447fb6334b30505"
+  },
+  "Montadora": "Volkswagen",
+  "Pais": "Alemanhã"
+},
+{
+  "_id": {
+    "$oid": "648794e99447fb6334b30506"
+  },
+  "Montadora": "Renault",
+  "Pais": "França"
+},
+{
+  "_id": {
+    "$oid": "648794e99447fb6334b30507"
+  },
+  "Montadora": "Ford",
+  "Pais": "EUA"
+},
+{
+  "_id": {
+    "$oid": "648794e99447fb6334b30508"
+  },
+  "Montadora": "Honda",
+  "Pais": "Japão"
+}]
